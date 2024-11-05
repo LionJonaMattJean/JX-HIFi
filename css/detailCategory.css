@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+body a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: rgba(16, 60, 172, 1);
+}
+
+.categoryNav {
+    background-color: rgba(65, 101, 192, 1);
+}
+
+.categoryShortcut,
+.btnIcon {
+    color: white;
+}
+
+.separator {
+    border-left: 2px solid rgba(16, 60, 172, 1);
+    border-radius: 1px;
+    height: 20px;
+    margin: auto 5px;
+}
+
+
+/* Style de la sidebar gauche */
+.sidebarContainer h5 {
+    padding-left: 16%;
+    margin-top: 10%;
+}
+
+.filterChoice {
+    padding-left: 22%;
+}
+
+/* css pour le selecteur de prix */
+.priceSliders {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    margin: 30px 0;
+    background-color: #8a8a8a;
+}
+.priceSliders input {
+    position: absolute;
+    width: 100%;
+    background: none;
+    pointer-events: none;
+    top: 50%;
+    transform: translateY(-50%);
+    appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    /* border: 1px solid rgba(16, 60, 172, 1); */
+    background: rgba(16, 60, 172, 1);
+    pointer-events: auto;
+    appearance: none;
+    cursor: pointer;
+}
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+.currency {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4b566b;
+    white-space: nowrap;
+    background-color: white;
+    border: 1px solid #d4d7e5;
+    border-radius: .25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.inputField {
+    margin-left: -1px;
+    padding: .425rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+    color: #4b566b;
+    background-color: white;
+    background-clip: padding-box;
+    border: 1px solid #d4d7e5;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.inputField:focus {
+    outline: none;
+}
+
+
+
+/* Style des card de produit */
+.card-body {
+    background-color: rgba(143, 166, 224, 0.2);
+}
+
+.card {
+    --bs-card-border-radius: 50px;
+    --bs-card-border-width: 0px;
+}

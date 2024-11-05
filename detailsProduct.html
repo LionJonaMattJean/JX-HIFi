@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Détails du Produit</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='css/detailProduct.css'>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src='main.js'></script>
+
+    <style>
+        .badge {
+            cursor: pointer;
+            border-radius: 20px;
+            border: solid 1px rgba(16, 60, 172, 1);
+            color: rgba(16, 60, 172, 1);
+        }
+
+        .specsTable th,
+        .specsTable td {
+            padding: 0.5rem;
+            /* opacity: 0; */
+        }
+
+        .specs-section {
+            /* background-color: rgba(16, 60, 172, 0.2); */
+            border-radius: 10px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .txtPrice {
+            color: rgba(16, 60, 172, 1);
+        }
+
+        .quickSpecs td {
+            padding-left: 4%;
+            padding-bottom: 0.5rem;
+            width: 80%;
+        }
+        .quickSpecs {
+            font-size: large;
+        }
+
+        .btnQty {
+            width: 40px;
+            cursor: pointer;
+        }
+        .txtQty {
+            border: none;
+            font-size: 2rem;
+        }
+        .btnAdd {
+            font-size: 2rem;
+            color: white;
+            background-color: rgba(16, 60, 172, 1);
+            border-radius: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo/Logo JX-HIFI extern transparent.png" alt="logo jx-hifi" width="100">
+                </a>
+
+                <div class="input-group w-50">
+                    <input class="form-control" style="--bs-border-radius: 20px" type="text"
+                        placeholder="Find a product...">
+                    <button class="btn" style="--bs-btn-bg: white; --bs-btn-border-radius: 20px" type="submit">
+                        <img src="images/icons/search.svg" alt="search_icon" style="height: 1.5em;">
+                    </button>
+                </div>
+
+                <div class="d-flex gap-5">
+                    <a class="btnIcon text-center" href="">
+                        <img class="imgIcon" src="images/icons/Shop.svg" alt="store_icon">
+                        <div class="txtIcon">Stores</div>
+                    </a>
+                    <a class="btnIcon text-center" href="">
+                        <img class="imgIcon" src="images/icons/Profil.svg" alt="account_icon">
+                        <div class="txtIcon">Account</div>
+                    </a>
+                    <a class="btnIcon text-center" href="">
+                        <img class="imgIcon" src="images/icons/cart.svg" alt="cart_icon">
+                        <div class="txtIcon">Cart</div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="categoryNav container-fluid d-flex justify-content-center py-1 gap-4">
+            <a class="categoryShortcut" style="font-weight: bold;" href="#">Offers</a>
+            <div class="separator"></div>
+            <a class="categoryShortcut" href="#">Desktops</a>
+            <div class="separator"></div>
+            <a class="categoryShortcut" href="#">Laptops</a>
+            <div class="separator"></div>
+            <a class="categoryShortcut" href="#">Screens</a>
+            <div class="separator"></div>
+            <a class="categoryShortcut" href="#">Phones</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="d-flex flex-column gap-3">
+                        <img src="images/ecran Lenovo.jpg" alt="Monitor 1" class="border">
+                        <img src="images/ecran Lenovo.jpg" alt="Monitor 2">
+                        <img src="images/ecran Lenovo.jpg" alt="Monitor 3">
+                        <img src="images/ecran Lenovo.jpg" alt="Monitor 4">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ratio ratio-16x9">
+                        <img src="images/ecran Lenovo.jpg" alt="Monitor 1">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h2 class="fw-bold">Monitor Lenovo 17” HDMI 2.0 USB-A 40Hz</h2>
+                    <p><span class="stars text-warning h3">&#9733;&#9733;&#9733;&#9734;&#9734;</span> (21 avis)</p>
+                    <h1 class="txtPrice">$145,99 <del class="text-muted h6">$160</del></h1>
+                    <div>
+                        <table class="quickSpecs ms-5 my-3">
+                            <tr>
+                                <th>Brand</th>
+                                <td>lenovo</td>
+                            </tr>
+                            <tr>
+                                <th>Size</th>
+                                <td>14.91 x 10.19 x 3.74 po (H x W x D)</td>
+                            </tr>
+                            <tr>
+                                <th>Resolution</th>
+                                <td>1280 x 720</td>
+                            </tr>
+                            <tr>
+                                <th>Variant</th>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <span class="badge">Black</span>
+                                        <span class="badge text-muted border">White</span>
+                                        <span class="badge text-muted border">Silver</span>
+                                        <span class="badge text-muted border">Red</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-around my-3">
+                        <div class="d-flex quantity my-4">
+                            <img class="btnQty" src="images/icons/dash-circle.svg" alt="less">
+                            <input type="number" value="1" class="txtQty text-center fw-bold form-control mx-2" style="width: 70px;">
+                            <img class="btnQty" src="images/icons/plus-circle-fill.svg" alt="plus">
+                        </div>
+                        <button class="btnAdd btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link" id="description-tab" data-bs-toggle="tab" data-bs-target="#description"
+                            type="button" role="tab">Description</button>
+                        <button class="nav-link active" id="specifications-tab" data-bs-toggle="tab"
+                            data-bs-target="#specifications" type="button" role="tab">Specifications</button>
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews"
+                            type="button" role="tab">Reviews</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade" id="description" role="tabpanel">
+                        <p>Description content...</p>
+                    </div>
+                    <div class="tab-pane fade show active" id="specifications" role="tabpanel">
+                        <div class="specs-section">
+                            <table class="table specsTable">
+                                <tbody>
+                                    <tr>
+                                        <th>Size [Inch]</th>
+                                        <td>17</td>
+                                        <th>Resolution</th>
+                                        <td>1280 x 720</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Panel Type</th>
+                                        <td>IPS</td>
+                                        <th>Aspect Ratio</th>
+                                        <td>16:9</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Color Gamut (typ)</th>
+                                        <td>NTSC 72% (CIE1931)</td>
+                                        <th>Brightness (Typ.) [cd/m2]</th>
+                                        <td>250</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Refresh Rate (Max.) [Hz]</th>
+                                        <td>75</td>
+                                        <th>Connection</th>
+                                        <td>HDMI (x1) USB Type A (x2)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Response Time</th>
+                                        <td>5ms (GtG at Faster)</td>
+                                        <th>AC Input</th>
+                                        <td>100 - 240V (50/60Hz)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>AMD FreeSync</th>
+                                        <td>Yes</td>
+                                        <th>Wall Mountable [mm]</th>
+                                        <td>75 x 75</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="reviews" role="tabpanel">
+                        <p>Reviews content...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+        <!-- <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-1 d-none d-md-block">
+                    <div class="d-flex flex-column gap-2">
+                        <img src="images/ecran Lenovo.jpg" class="img-thumbnail" alt="Lenovo Monitor 1">
+                        <img src="images/ecran Lenovo.jpg" class="img-thumbnail" alt="Lenovo Monitor 2">
+                        <img src="images/ecran Lenovo.jpg" class="img-thumbnail" alt="Lenovo Monitor 3">
+                        <img src="images/ecran Lenovo.jpg" class="img-thumbnail" alt="Lenovo Monitor 4">
+                        <img src="images/ecran Lenovo.jpg" class="img-thumbnail" alt="Lenovo Monitor 5">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="ratio ratio-1x1"></div>
+                    <img src="images/ecran Lenovo.jpg" class="img-flui" alt="Lenovo Monitor 1">
+                </div>
+                <div class="col-md-6 mt-3 mt-md-0">
+                    <h1 class="h2 mb-4">Monitor Lenovo 17" HDMI 2.0 USB-A 40Hz</h1>
+
+                    <div class="mb-3">
+                        <span class="text-warning">★★★</span>☆☆
+                        <span class="text-muted ms-2">(21 avis)</span>
+                    </div>
+
+                    <div class="mb-4">
+                        <span class="h2 text-primary">145,99 $</span>
+                        <span class="text-muted text-decoration-line-through ms-2">160 $</span>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-4">
+                                <strong>Brand</strong>
+                            </div>
+                            <div class="col-8">
+                                Lenovo
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <strong>Size</strong>
+                            </div>
+                            <div class="col-8">
+                                14.91 x 10.19 x 3.74 po (H x W x D)
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <strong>Resolution</strong>
+                            </div>
+                            <div class="col-8">
+                                1280 x 720
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <strong>Variant</strong>
+                        <div class="btn-group mt-2" role="group">
+                            <input type="radio" class="btn-check" name="variant" id="black" checked>
+                            <label class="btn btn-outline-secondary" for="black">Black</label>
+
+                            <input type="radio" class="btn-check" name="variant" id="white">
+                            <label class="btn btn-outline-secondary" for="white">White</label>
+
+                            <input type="radio" class="btn-check" name="variant" id="silver">
+                            <label class="btn btn-outline-secondary" for="silver">Silver</label>
+
+                            <input type="radio" class="btn-check" name="variant" id="red">
+                            <label class="btn btn-outline-secondary" for="red">Red</label>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <div class="input-group" style="width: 130px;">
+                            <button class="btn btn-outline-secondary" type="button">-</button>
+                            <input type="text" class="form-control text-center" value="1">
+                            <button class="btn btn-outline-secondary" type="button">+</button>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row border">
+
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#description">Description</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link active" data-bs-toggle="tab"
+                            data-bs-target="#specifications">Specifications</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#reviews">Reviews</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content p-3 bg-light rounded-bottom">
+                    <div class="tab-pane fade" id="description">
+                        <p>Product description here...</p>
+                    </div>
+                    <div class="tab-pane fade show active" id="specifications">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <h6>Size [Inch]</h6>
+                                <p>17</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h6>Resolution</h6>
+                                <p>1280 x 720</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h6>Connection</h6>
+                                <p>HDMI (x1) USB Type A (x2)</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h6>Panel Type</h6>
+                                <p>IPS</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h6>Aspect Ratio</h6>
+                                <p>16:9</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h6>AC Input</h6>
+                                <p>100 - 240V (50/60Hz)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="reviews">
+                        <p>Product reviews here...</p>
+                    </div>
+                </div>
+            </div> -->
+    </main>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
