@@ -27,3 +27,71 @@ body a {
     height: 20px;
     margin: auto 5px;
 }
+.txtPrice {
+    color: rgba(16, 60, 172, 1);
+}
+
+
+.quickSpecs td {
+    padding-left: 4%;
+    padding-bottom: 0.5rem;
+    width: 80%;
+}
+
+.quickSpecs {
+    font-size: large;
+}
+
+.variantOptions {
+    color: rgba(16, 60, 172, 1);
+}
+
+/* Quantity et btn Ajouter */
+.btnQty {
+    width: 40px;
+    cursor: pointer;
+}
+
+.txtQty {
+    border: none;
+    font-size: 2rem;
+}
+
+.btnAdd {
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(16, 60, 172, 1);
+    border-radius: 30px;
+}
+
+/* tableau de specification HEADER*/
+.nav-tabs {
+    background-color: rgba(16, 60, 172, 0.2);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+/* tableau de specification CONTENT*/
+.specsTable th {
+    border: none;
+    padding-bottom: 0%;
+    background-color: rgba(16, 60, 172, 0);
+}
+
+.specsTable td {
+    border: none;
+    padding-top: 0%;
+    background-color: rgba(16, 60, 172, 0);
+    color: gray;
+}
+
+.specsSection,
+.descSection,
+.reviewSection {
+    background-color: rgba(16, 60, 172, 0.2);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 1rem;
+}
