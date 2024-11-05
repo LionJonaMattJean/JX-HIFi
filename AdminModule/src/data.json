@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "nom": "Smartphone",
+    "description": "High-end smartphone with OLED display",
+    "coutant": 500,
+    "prix_vente": 799,
+    "quantite": 20,
+    "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Smartphone"
+  },
+  {
+    "id": 2,
+    "nom": "Laptop",
+    "description": "14-inch laptop with SSD storage",
+    "coutant": 700,
+    "prix_vente": 1100,
+    "quantite": 15,
+    "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Laptop"
+  },
+  {
+    "id": 3,
+    "nom": "Wireless Earbuds",
+    "description": "Noise-cancelling wireless earbuds",
+    "coutant": 80,
+    "prix_vente": 150,
+    "quantite": 50,
+    "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Wireless+Earbuds"
+  },
+  {
+    "id": 4,
+    "nom": "Smartwatch",
+    "description": "Fitness-focused smartwatch with GPS",
+    "coutant": 120,
+    "prix_vente": 250,
+    "quantite": 30,
+    "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Smartwatch"
+  },
+  {
+    "id": 5,
+    "nom": "Gaming Console",
+    "description": "Next-gen gaming console with 4K support",
+    "coutant": 300,
+    "prix_vente": 499,
+    "quantite": 10,
+    "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Gaming+Console"
+  },
+  {
+    "id": 6,
+    "nom": "Bluetooth Speaker",
+    "description": "Portable Bluetooth speaker with powerful bass",
+    "coutant": 45,
+    "prix_vente": 99,
+    "quantite": 40,
+    "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Bluetooth+Speaker"
+  },
+  {
+    "id": 7,
+    "nom": "Tablet",
+    "description": "10-inch tablet with 64GB storage",
+    "coutant": 200,
+    "prix_vente": 350,
+    "quantite": 25,
+    "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Tablet"
+  },
+  {
+    "id": 8,
+    "nom": "External Hard Drive",
+    "description": "2TB external hard drive with USB-C support",
+    "coutant": 60,
+    "prix_vente": 120,
+    "quantite": 35,
+    "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=External+Hard+Drive"
+  },
+  {
+    "id": 9,
+    "nom": "Digital Camera",
+    "description": "Mirrorless digital camera with 24MP sensor",
+    "coutant": 800,
+    "prix_vente": 1200,
+    "quantite": 8,
+    "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Digital+Camera"
+  },
+  {
+    "id": 10,
+    "nom": "Smart Home Hub",
+    "description": "Voice-controlled smart home hub",
+    "coutant": 90,
+    "prix_vente": 150,
+    "quantite": 20,
+    "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Smart+Home+Hub"
+  },
+  {
+    "id": 11,
+    "nom": "VR Headset",
+    "description": "High-resolution VR headset with immersive sound",
+    "coutant": 250,
+    "prix_vente": 399,
+    "quantite": 12,
+    "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=VR+Headset"
+  },
+  {
+    "id": 12,
+    "nom": "Router",
+    "description": "High-speed WiFi router with extended range",
+    "coutant": 60,
+    "prix_vente": 130,
+    "quantite": 28,
+    "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Router"
+  },
+  {
+    "id": 13,
+    "nom": "Electric Kettle",
+    "description": "1.5L electric kettle with auto-shutoff",
+    "coutant": 20,
+    "prix_vente": 45,
+    "quantite": 60,
+    "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Electric+Kettle"
+  },
+  {
+    "id": 14,
+    "nom": "Portable Charger",
+    "description": "10000mAh portable charger with USB-C",
+    "coutant": 15,
+    "prix_vente": 35,
+    "quantite": 50,
+    "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Portable+Charger"
+  },
+  {
+    "id": 15,
+    "nom": "Smart Thermostat",
+    "description": "Energy-saving smart thermostat with app control",
+    "coutant": 70,
+    "prix_vente": 150,
+    "quantite": 18,
+    "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Smart+Thermostat"
+  }
+]

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Administration-Accueil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="css/stylesAdmin.css" rel="stylesheet">
+  <link href="css/mediaQueries.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Navbar(header) -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center">
+      <!-- Sidebar Toggle Button (Only visible on small screens) -->
+      <button class="btn btn-outline-secondary sidebar-toggle me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+        ☰
+      </button>
+      <img class="navbar-brand ms-5" src="assets/logo/Logo%20JX-HIFI%20extern%20transparent.png" alt="logo compagnie">
+      <!-- Search Form -->
+      <form class=" d-sm-flex form-search" role="search">
+        <div class="input-group">
+          <span class="input-group-text"><img src="assets/svgIcon/search.svg" alt="search"></span>
+          <input class="form-control ms-auto" type="search" placeholder="Recherche de Produit" aria-label="Recherche">
+        </div>
+      </form>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Main Container -->
+<div class="container-fluid p-0">
+  <div class="row g-0 ">
+    <!-- SideNavBar -->
+    <div class="col-2 sidenav  custom-navbar flex-column ">
+      <ul class="nav nav-underline flex-column">
+        <li class="nav-item mb-3">
+          <a href="indexAdmin.html" class="nav-link link-body-emphasis">
+            <img class="icon me-2" src="assets/svgIcon/house.svg" alt="Home"> Accueil
+          </a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="./catalogue.html" class="nav-link link-body-emphasis">
+            <img class="icon me-2" src="assets/svgIcon/pc-display.svg" alt="Catalogue"> Catalogue des Produits
+          </a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="./categories.html" class="nav-link link-body-emphasis">
+            <img class="icon me-2" src="assets/svgIcon/collection.svg" alt="Categories"> Categories
+          </a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="./commande.html" class="nav-link active">
+            <img class="icon me-2" src="assets/svgIcon/bag.svg" alt="Orders"> Liste des commandes
+          </a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="./registreUtilisateur.html" class="nav-link link-body-emphasis">
+            <img class="icon me-2" src="assets/svgIcon/people.svg" alt="Users"> Registre des Utilisateurs
+          </a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="./magasin.html" class="nav-link link-body-emphasis">
+            <img class="icon me-2" src="assets/svgIcon/buildings.svg" alt="Shops"> Gestion des Magasins
+          </a>
+        </li>
+      </ul>
+      <div class="mt-auto">
+        <hr>
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis" data-bs-toggle="modal" data-bs-target="#modalParametre">
+              <img src="assets/svgIcon/gear.svg" alt="Settings" class="icon-nav me-2"> Paramètre
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+              <img src="assets/leave-3.svg" alt="Logout" class="icon-nav me-2"> Déconnections
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--Offcanvas sidebar-->
+    <div class="offcanvas offcanvas-start d-lg-flex flex-column sidenav vh-100" tabindex="-1" id="sidebar">
+      <div class="offcanvas-header d-lg-none">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="nav nav-underline flex-column">
+          <li class="nav-item mb-3">
+            <a href="indexAdmin.html" class="nav-link link-body-emphasis">
+              <img class="icon me-2" src="assets/svgIcon/house.svg" alt="accueil">
+              Accueil
+            </a>
+          </li>
+          <li class="nav-item mb-3">
+            <a href="./catalogue.html" class="nav-link link-body-emphasis">
+              <img class="icon me-2" src="assets/svgIcon/pc-display.svg" alt="pc">
+              Catalogue des Produits
+            </a>
+          </li>
+          <li class="nav-item mb-3">
+            <a href="./categories.html" class="nav-link link-body-emphasis">
+              <img class="icon me-2" src="assets/svgIcon/collection.svg" alt="collection">
+              Categories
+            </a>
+          </li>
+          <li class="nav-item mb-3">
+            <a href="./commande.html" class="nav-link active">
+              <img class="icon me-2" src="assets/svgIcon/bag.svg" alt="bag">
+              Liste des commandes
+            </a>
+          </li>
+          <li class="nav-item mb-3">
+            <a href="./registreUtilisateur.html" class="nav-link link-body-emphasis">
+              <img class="icon me-2" src="assets/svgIcon/people.svg" alt="people">
+              Registre des Utilisateurs
+            </a>
+          </li>
+          <li class="nav-item mb-3">
+            <a href="./magasin.html" class="nav-link link-body-emphasis">
+              <img class="icon me-2" src="assets/svgIcon/buildings.svg" alt="building">
+              Gestion des Magasins
+            </a>
+          </li>
+        </ul>
+        <hr class="d-none d-lg-block">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis" data-bs-toggle="modal" data-bs-target="#modalParametre">
+              <img src="assets/svgIcon/gear.svg" alt="paramètre" class="icon-nav me-2">
+              Paramètre
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+              <img src="assets/leave-3.svg" alt="sign-out" class="icon-nav me-2">
+              Déconnections
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content (changer le contenu à partir ici) -->
+    <div class="col-12 col-md-10 col-lg-8 col-xl-6 main-content-wrapper flex-fill ms-3 me-3">
+      <div class="content-header">
+        <h1>Liste Commande</h1>
+      </div>
+      <div class="card p-4">
+        <button type="button" class="btn btn-primary mb-5 mt-2 ms-auto btn-add" data-bs-toggle="modal" data-bs-target="#modalAjout">Ajouter Commande</button>
+        <div class="container-fluid my-4">
+          <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+              <th>ID Client</th>
+              <th>Nom</th>
+              <th>Prénom</th>
+              <th>Statut</th>
+              <th>Total</th>
+              <th>ID Transaction</th>
+              <th>Actions</th>
+            </tr>
+
+            </thead>
+            <tbody id="table-body">
+            <tr>
+              <td>1001</td>
+              <td>Smith</td>
+              <td>Alice</td>
+              <td>Expédié</td>
+              <td> 90.19</td>
+              <td>TX1001</td>
+              <td>
+                <a  class="text-primary action-link " data-bs-toggle="modal" data-bs-target="#modalModifier">Modifier</a>&emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDetails">Details</a>  &emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDelete">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>1001</td>
+              <td>Smith</td>
+              <td>Alice</td>
+              <td>Expédié</td>
+              <td> 90.19</td>
+              <td>TX1001</td>
+              <td>
+                <a  class="text-primary action-link " data-bs-toggle="modal" data-bs-target="#modalModifier">Modifier</a>&emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDetails">Details</a>  &emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDelete">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>1001</td>
+              <td>Smith</td>
+              <td>Alice</td>
+              <td>Expédié</td>
+              <td> 90.19</td>
+              <td>TX1001</td>
+              <td>
+                <a  class="text-primary action-link " data-bs-toggle="modal" data-bs-target="#modalModifier">Modifier</a>&emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDetails">Details</a>  &emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDelete">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>1001</td>
+              <td>Smith</td>
+              <td>Alice</td>
+              <td>Expédié</td>
+              <td> 90.19</td>
+              <td>TX1001</td>
+              <td>
+                <a  class="text-primary action-link " data-bs-toggle="modal" data-bs-target="#modalModifier">Modifier</a>&emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDetails">Details</a>  &emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDelete">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>1001</td>
+              <td>Smith</td>
+              <td>Alice</td>
+              <td>Expédié</td>
+              <td> 90.19</td>
+              <td>TX1001</td>
+              <td>
+                <a  class="text-primary action-link " data-bs-toggle="modal" data-bs-target="#modalModifier">Modifier</a>&emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDetails">Details</a>  &emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDelete">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>1001</td>
+              <td>Smith</td>
+              <td>Alice</td>
+              <td>Expédié</td>
+              <td> 90.19</td>
+              <td>TX1001</td>
+              <td>
+                <a  class="text-primary action-link " data-bs-toggle="modal" data-bs-target="#modalModifier">Modifier</a>&emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDetails">Details</a>  &emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDelete">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>1001</td>
+              <td>Smith</td>
+              <td>Alice</td>
+              <td>Expédié</td>
+              <td> 90.19</td>
+              <td>TX1001</td>
+              <td>
+                <a  class="text-primary action-link " data-bs-toggle="modal" data-bs-target="#modalModifier">Modifier</a>&emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDetails">Details</a>  &emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDelete">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>1001</td>
+              <td>Smith</td>
+              <td>Alice</td>
+              <td>Expédié</td>
+              <td> 90.19</td>
+              <td>TX1001</td>
+              <td>
+                <a  class="text-primary action-link " data-bs-toggle="modal" data-bs-target="#modalModifier">Modifier</a>&emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDetails">Details</a>  &emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDelete">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>1001</td>
+              <td>Smith</td>
+              <td>Alice</td>
+              <td>Expédié</td>
+              <td> 90.19</td>
+              <td>TX1001</td>
+              <td>
+                <a  class="text-primary action-link " data-bs-toggle="modal" data-bs-target="#modalModifier">Modifier</a>&emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDetails">Details</a>  &emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDelete">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>1001</td>
+              <td>Smith</td>
+              <td>Alice</td>
+              <td>Expédié</td>
+              <td> 90.19</td>
+              <td>TX1001</td>
+              <td>
+                <a  class="text-primary action-link " data-bs-toggle="modal" data-bs-target="#modalModifier">Modifier</a>&emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDetails">Details</a>  &emsp;
+                <a  class="text-primary action-link" data-bs-toggle="modal" data-bs-target="#modalDelete">Supprimer</a>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <!--Pagination automatique-->
+          <nav>
+            <ul class="pagination justify-content-center" id="pagination">
+              <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+    <!-- Modal parametre -->
+    <div class="modal fade " id="modalParametre" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="parametreTitre">Paramètre</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modalParametreBody">
+            <div class="col-md-8">
+              <form id="parametreForm">
+                <div class="mb-3">
+                  <label for="utilisateurUserParam" class="form-label">Nom Utilisateur</label>
+                  <input type="text" class="form-control" id="utilisateurUserParam" value="jonathan1234">
+                </div>
+                <div class="mb-3">
+                  <label for="utilisateurNomParam" class="form-label">Nom</label>
+                  <input type="text" class="form-control" id="utilisateurNomParam" value="Richard">
+                </div>
+                <div class="mb-3">
+                  <label for="utilisateurPrenomParam" class="form-label">Prenom</label>
+                  <input type="text" class="form-control" id="utilisateurPrenomParam" value="Jonathan"></input>
+                </div>
+                <div class="mb-3">
+                  <label for="utilisateurAdresseParam" class="form-label">Adresse</label>
+                  <input type="text" class="form-control" id="utilisateurAdresseParam" value="2230 rue des Marteau">
+                </div>
+                <div class="mb-3">
+                  <label for="utilisateurProvinceParam" class="form-label">Province</label>
+                  <input type="text" class="form-control" id="utilisateurProvinceParam" value="Quebec">
+                </div>
+                <div class="mb-3">
+                  <label for="utilisateurCodeParam" class="form-label">Code Postal</label>
+                  <input type="text" class="form-control" id="utilisateurCodeParam" value="H1N 1H1">
+                </div>
+                <div class="mb-3">
+                  <label for="utilisateurPaysParam" class="form-label">Pays</label>
+                  <input type="text" class="form-control" id="utilisateurPaysParam" value="Canada">
+                </div>
+                <div class="mb-3">
+                  <label for="utilisateurEmailParam" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="utilisateurEmailParam" value="exemple@gmail.com">
+                </div>
+                <div class="mb-3">
+                  <label for="utilisateurPhoneParam" class="form-label">Téléphone</label>
+                  <input type="text" class="form-control" id="utilisateurPhoneParam" value="(514)555-1234">
+                </div>
+                <div class="d-flex">
+                  <button type="submit" class="btn btn-primary btn-save">Enregistrer</button>
+                  <button type="button" class="btn btn-warning ms-auto" data-bs-dismiss="modal">Reinitialiser mot de passe </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="container mt-5">
+              <div class="alert alert-success " role="alert">
+                L'utilisateur a été modifier avec succès
+              </div>
+            </div>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal details-->
+    <div class="modal fade " id="modalDetails" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="detailTitre">Titre modal</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modalDetailBody">
+            <form>
+              <h4>Informations du Client</h4>
+              <div class="form-group">
+                <label>Prénom</label>
+                <input type="text" class="form-control" value="Alice" required>
+              </div>
+              <div class="form-group">
+                <label>Nom</label>
+                <input type="text" class="form-control" value="Smith" required>
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" value="alice.smith@example.com" required>
+              </div>
+              <div class="form-group">
+                <label>Téléphone</label>
+                <input type="tel" class="form-control" value="+1234567891" required>
+              </div>
+              <div class="form-group">
+                <label>Adresse</label>
+                <input type="text" class="form-control" value="456 Oak St" required>
+              </div>
+              <div class="form-group">
+                <label>Ville</label>
+                <input type="text" class="form-control" value="Seattle" required>
+              </div>
+              <div class="form-group">
+                <label>État</label>
+                <input type="text" class="form-control" value="WA" required>
+              </div>
+              <div class="form-group">
+                <label>Code Postal</label>
+                <input type="text" class="form-control" value="98101" required>
+              </div>
+              <div class="form-group">
+                <label>Pays</label>
+                <input type="text" class="form-control" value="USA" required>
+              </div>
+
+              <h4>Produits</h4>
+              <table class="table">
+                <thead>
+                <tr>
+                  <th>Nom Produit</th>
+                  <th>Quantité</th>
+                  <th>Prix</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>
+                    <input type="text" class="form-control" value="Widget A" required>
+                  </td>
+                  <td>
+                    <input type="number" class="form-control" value="3" min="1" required>
+                  </td>
+                  <td>
+                    <input type="text" class="form-control" value="15.99" required>
+                  </td>
+
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" class="form-control" value="Gadget B" required>
+                  </td>
+                  <td>
+                    <input type="number" class="form-control" value="1" min="1" required>
+                  </td>
+                  <td>
+                    <input type="text" class="form-control" value="29.99" required>
+                  </td>
+
+                </tr>
+                </tbody>
+              </table>
+              <button type="button" class="btn btn-primary" onclick="addProduct()">Ajouter Produit</button>
+
+              <h4 class="mt-4">Paiement</h4>
+              <div class="form-group">
+                <div class="form-group">
+                  <label>Méthode de Paiement</label>
+                  <select class="form-control" required>
+                    <option value="credit">Crédit</option>
+                    <option value="comptants">Comptants</option>
+                  </select>
+                </div>
+                <label>Numeros carte de Paiement</label>
+                <input type="text" class="form-control">
+              </div>
+
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal modifier -->
+    <div class="modal fade " id="modalModifier" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="ModifierTitre">Modifier Commande</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modalModifierBody">
+            <form>
+              <h4>Informations du Client</h4>
+              <div class="form-group">
+                <label for="Nom">Prénom</label>
+                <input type="text" class="form-control" id="nom" value="Alice" required>
+              </div>
+              <div class="form-group">
+                <label for="prenom">Nom</label>
+                <input type="text" class="form-control" id="prenom" value="Smith" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" value="alice.smith@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" class="form-control" id="telephone" value="+1234567891" required>
+              </div>
+              <div class="form-group">
+                <label for="adresse">Adresse</label>
+                <input type="text" class="form-control" id="adresse" value="456 Oak St" required>
+              </div>
+              <div class="form-group">
+                <label for="ville">Ville</label>
+                <input type="text" class="form-control" id="ville" value="Seattle" required>
+              </div>
+              <div class="form-group">
+                <label for="province">État</label>
+                <input type="text" class="form-control" id="province" value="WA" required>
+              </div>
+              <div class="form-group">
+                <label for="codePostal">Code Postal</label>
+                <input type="text" class="form-control" id="codePostal" value="98101" required>
+              </div>
+              <div class="form-group">
+                <label for="pays">Pays</label>
+                <input type="text" class="form-control" id="pays" value="USA" required>
+              </div>
+
+              <h4>Produits</h4>
+              <table class="table">
+                <thead>
+                <tr>
+                  <th>Nom Produit</th>
+                  <th>Quantité</th>
+                  <th>Prix</th>
+                  <th>Action</th>
+                </tr>
+                </thead>
+                <tbody id="produitsTable">
+                <tr>
+                  <td>
+                    <input type="text" class="form-control" value="Widget A" required>
+                  </td>
+                  <td>
+                    <input type="number" class="form-control" value="3" min="1" required>
+                  </td>
+                  <td>
+                    <input type="text" class="form-control" value="15.99" required>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" onclick="removeProduct(this)">Supprimer</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" class="form-control" value="Gadget B" required>
+                  </td>
+                  <td>
+                    <input type="number" class="form-control" value="1" min="1" required>
+                  </td>
+                  <td>
+                    <input type="text" class="form-control" value="29.99" required>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" onclick="removeProduct(this)">Supprimer</button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+              <button type="button" class="btn btn-primary" onclick="addProduct()">Ajouter Produit</button>
+
+              <h4 class="mt-4">Paiement</h4>
+              <div class="form-group">
+
+                <div class="form-group">
+                  <label for="listMethode">Méthode de Paiement</label>
+                  <select class="form-control" id="listMethode" required>
+                    <option value="credit">Crédit</option>
+                    <option value="comptants">Comptants</option>
+                  </select>
+                </div>
+                <label for="addMethodePaiement">Numeros carte de Paiement</label>
+                <input type="text" class="form-control" id="addMethodePaiement">
+              </div>
+
+              <button type="submit" class="btn btn-success mt-4">Modifier Commande</button>
+            </form>
+
+
+          </div>
+          <div class="modal-footer">
+            <div class="container mt-5">
+              <div class="alert alert-success " role="alert">
+                La Commande a ete modifier avec succès
+              </div>
+            </div>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal ajouter-->
+    <div class="modal fade " id="modalAjout" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="AjoutTitre">Ajouter Produit</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="ajoutCommandeForm">
+              <h4>Informations du Client</h4>
+              <div class="form-group">
+                <button type="button" class="btn btn-info"  aria-label="Trouver Client">Trouver Client</button>
+                <button type="button" class="btn btn-info"  aria-label="Créer Client">Créer Client</button><br>
+                <label class="mt-4" for="addNom">Prénom</label>
+                <input type="text" class="form-control" id="addNom" required>
+              </div>
+              <div class="form-group">
+                <label for="addPrenom">Nom</label>
+                <input type="text" class="form-control" id="addPrenom" required>
+              </div>
+              <div class="form-group">
+                <label for="addEmail">Email</label>
+                <input type="email" class="form-control" id="addEmail" required>
+              </div>
+              <div class="form-group">
+                <label for="addTelephone">Téléphone</label>
+                <input type="tel" class="form-control" id="addTelephone" required>
+              </div>
+              <div class="form-group">
+                <label for="addAdresse">Adresse</label>
+                <input type="text" class="form-control" id="addAdresse" required>
+              </div>
+              <div class="form-group">
+                <label for="addVille">Ville</label>
+                <input type="text" class="form-control" id="addVille" required>
+              </div>
+              <div class="form-group">
+                <label for="addProvince">État</label>
+                <input type="text" class="form-control" id="addProvince" required>
+              </div>
+              <div class="form-group">
+                <label for="addCodePostal">Code Postal</label>
+                <input type="text" class="form-control" id="addCodePostal" required>
+              </div>
+              <div class="form-group">
+                <label for="addPays">Pays</label>
+                <input type="text" class="form-control" id="addPays" required>
+              </div>
+
+              <h4>Produits</h4>
+              <table class="table">
+                <thead>
+                <tr>
+                  <th>Nom Produit</th>
+                  <th>Quantité</th>
+                  <th>Prix</th>
+                  <th>Action</th>
+                </tr>
+                </thead>
+                <tbody id="addProduitsTable">
+
+
+                </tbody>
+              </table>
+              <button type="button" class="btn btn-primary" onclick="addProductADD()">Ajouter Produit</button>
+
+              <h4 class="mt-4">Paiement</h4>
+              <div class="form-group">
+
+                <div class="form-group">
+                  <label for="addListMethode">Méthode de Paiement</label>
+                  <select class="form-control" id="addListMethode" required>
+                    <option value="credit">Crédit</option>
+                    <option value="comptants">Comptants</option>
+                  </select>
+                </div>
+                <label for="addAddMethodePaiement">Numeros carte de Paiement</label>
+                <input type="text" class="form-control" id="addAddMethodePaiement">
+              </div>
+
+              <button type="submit" class="btn btn-success mt-4">Ajouter Commande</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="container mt-5">
+              <div class="alert alert-success" role="alert">
+                La modification a ete effectuer avec succès
+              </div>
+            </div>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal delete-->
+    <div class="modal fade " id="modalDelete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="DeleteTitre">Supprimer le Produit</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Voulez vous supprimer le produit. Attention l'action est permanante
+          </div>
+          <div class="modal-footer">
+            <div class="container mt-5">
+              <div class="alert alert-success" role="alert">
+                La suppression a ete effectuer avec succès
+              </div>
+            </div>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Supprimer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function addProduct() {
+      const table = document.getElementById("produitsTable");
+      const row = document.createElement("tr");
+      row.innerHTML = `
+                <td><input type="text" class="form-control" required></td>
+                <td><input type="number" class="form-control" min="1" required></td>
+                <td><input type="text" class="form-control" required></td>
+                <td><button type="button" class="btn btn-danger" onclick="removeProduct(this)">Supprimer</button></td>
+            `;
+      table.appendChild(row);
+    }
+    function addProductADD() {
+      const table = document.getElementById("addProduitsTable");
+      const row = document.createElement("tr");
+      row.innerHTML = `
+                <td><input type="text" class="form-control" required></td>
+                <td><input type="number" class="form-control" min="1" required></td>
+                <td><input type="text" class="form-control" required></td>
+                <td><button type="button" class="btn btn-danger" onclick="removeProduct(this)">Supprimer</button></td>
+            `;
+      table.appendChild(row);
+    }
+
+    function removeProduct(button) {
+      const row = button.parentNode.parentNode;
+      row.parentNode.removeChild(row);
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> </div>
+</body>
+</html>
