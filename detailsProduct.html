@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Détails du Produit</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel='stylesheet' href="css/detailProduct.css">
+    <script src='js/quantityProduct.js' defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="detailsCategory.html">
+                    <img src="images/logo/Logo JX-HIFI extern transparent.png" alt="logo jx-hifi" width="100">
+                </a>
+
+                <div class="input-group w-50">
+                    <input class="form-control" style="--bs-border-radius: 20px" type="text"
+                        placeholder="Find a product...">
+                    <button class="btn" style="--bs-btn-bg: white; --bs-btn-border-radius: 20px" type="submit">
+                        <img src="images/icons/search.svg" alt="search_icon" style="height: 1.5em;">
+                    </button>
+                </div>
+
+                <div class="d-flex gap-5">
+                    <a class="btnIcon text-center" href="">
+                        <img class="imgIcon" src="images/icons/Shop.svg" alt="store_icon">
+                        <div class="txtIcon">Stores</div>
+                    </a>
+                    <a class="btnIcon text-center" href="">
+                        <img class="imgIcon" src="images/icons/Profil.svg" alt="account_icon">
+                        <div class="txtIcon">Account</div>
+                    </a>
+                    <a class="btnIcon text-center" href="">
+                        <img class="imgIcon" src="images/icons/cart.svg" alt="cart_icon">
+                        <div class="txtIcon">Cart</div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="categoryNav container-fluid d-flex justify-content-center py-1 gap-4">
+            <a class="categoryShortcut" style="font-weight: bold;" href="#">Offers</a>
+            <div class="separator"></div>
+            <a class="categoryShortcut" href="#">Desktops</a>
+            <div class="separator"></div>
+            <a class="categoryShortcut" href="#">Laptops</a>
+            <div class="separator"></div>
+            <a class="categoryShortcut" href="#">Screens</a>
+            <div class="separator"></div>
+            <a class="categoryShortcut" href="#">Phones</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="d-flex flex-column gap-3">
+                        <img src="images/ecran Lenovo.jpg" alt="Monitor 1" class="border">
+                        <img src="images/ecran Lenovo.jpg" alt="Monitor 2">
+                        <img src="images/ecran Lenovo.jpg" alt="Monitor 3">
+                        <img src="images/ecran Lenovo.jpg" alt="Monitor 4">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ratio ratio-16x9">
+                        <img src="images/ecran Lenovo.jpg" alt="Monitor 1">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h2 class="fw-bold">Monitor Lenovo 17” HDMI 2.0 USB-A 40Hz</h2>
+                    <p><span class="stars text-warning h3">&#9733;&#9733;&#9733;&#9734;&#9734;</span> (21 avis)</p>
+                    <h1 class="txtPrice">$145,99 <del class="text-muted h6">$160</del></h1>
+                    <div>
+                        <table class="quickSpecs ms-5 my-3">
+                            <tr>
+                                <th>Brand</th>
+                                <td>lenovo</td>
+                            </tr>
+                            <tr>
+                                <th>Size</th>
+                                <td>14.91 x 10.19 x 3.74 po (H x W x D)</td>
+                            </tr>
+                            <tr>
+                                <th>Resolution</th>
+                                <td>1280 x 720</td>
+                            </tr>
+                            <tr>
+                                <th>Variant</th>
+                                <td>
+                                    <div class="btn-group variantOptions" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                        <label class="btn " for="btnradio1">Black</label>
+                                    
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                        <label class="btn " for="btnradio2">White</label>
+                                    
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                        <label class="btn " for="btnradio3">Silver</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-around my-3">
+                        <div class="d-flex quantity my-4">
+                            <img class="btnQty lessQty" src="images/icons/dash-circle.svg" alt="less">
+                            <input type="number" value="1" class="txtQty text-center fw-bold form-control mx-2" style="width: 70px;" min="1">
+                            <img class="btnQty plusQty" src="images/icons/plus-circle-fill.svg" alt="plus">
+                        </div>
+                        <button class="btnAdd btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button"
+                            role="tab">Description</button>
+                        <button class="nav-link" id="specifications-tab" data-bs-toggle="tab"
+                            data-bs-target="#specifications" type="button" role="tab">Specifications</button>
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews"
+                            type="button" role="tab">Reviews</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="descSection tab-pane show active" id="description" role="tabpanel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam risus urna, imperdiet id
+                            ullamcorper eu, venenatis at nunc. Suspendisse tincidunt condimentum urna nec blandit. Proin
+                            a facilisis nunc, hendrerit accumsan quam. Nam sodales molestie lacus, non pharetra massa.
+                            Pellentesque nibh nulla, porta sed leo nec, lobortis interdum metus. Nullam suscipit purus
+                            nec dui interdum, nec vehicula nisi imperdiet. Maecenas pulvinar faucibus vulputate. Quisque
+                            at ultricies mauris. Nullam magna ex, maximus vitae tortor non, accumsan gravida nibh.</p>
+                    </div>
+                    <div class="tab-pane" id="specifications" role="tabpanel">
+                        <div class="specsSection">
+                            <table class="table specsTable">
+                                <tbody>
+                                    <tr>
+                                        <th>Size [Inch]</th>
+                                        <th>Resolution</th>
+                                        <th>Connection</th>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                        <td>1280 x 720</td>
+                                        <td>HDMI (x1) USB Type-A (x2)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Panel Type</th>
+                                        <th>Aspect Ratio</th>
+                                        <th>AC Imput</th>
+                                        </tr>
+                                        <tr>
+                                            <td>IPS</td>
+                                        <td>16:9</td>
+                                        <td>100 - 240V (50/60Hz)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Color Gamut (typ)</th>
+                                        <th>Brightness (Typ.) [cd/m2]</th>
+                                        <th>AMD FreeSync</th>
+                                        </tr>
+                                        <tr>
+                                            <td>NTSC 72% (CIE1931)</td>
+                                        <td>250</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Refresh Rate (Max.) [Hz]</th>
+                                        <th>Response Time</th>
+                                        <th>Wall Mountable [mm]</th>
+                                    </tr>
+                                    <tr>
+                                        <td>75</td>
+                                        <td>5ms (GtG at Faster)</td>
+                                        <td>75 x 75</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="reviewSection tab-pane" id="reviews" role="tabpanel">
+                        <p>Maybe one day...</p>
+                    </div>
+                    </div>
+                    </div>
+        </div>
+    </main>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

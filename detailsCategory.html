@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JX-HIFI</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/detailCategory.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src='js/priceRange.js' defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="detailsCategory.html">
+                    <img src="images/logo/Logo JX-HIFI extern transparent.png" alt="logo jx-hifi" width="100">
+                </a>
+
+                <div class="input-group w-50">
+                    <input class="form-control" style="--bs-border-radius: 20px" type="text"
+                        placeholder="Find a product...">
+                    <button class="btn" style="--bs-btn-bg: white; --bs-btn-border-radius: 20px" type="submit">
+                        <img src="images/icons/search.svg" alt="search_icon" style="height: 1.5em;">
+                    </button>
+                </div>
+
+                <div class="d-flex gap-5">
+                    <a class="btnIcon text-center" href="">
+                        <img class="imgIcon" src="images/icons/Shop.svg" alt="store_icon">
+                        <div class="txtIcon">Stores</div>
+                    </a>
+                    <a class="btnIcon text-center" href="">
+                        <img class="imgIcon" src="images/icons/Profil.svg" alt="account_icon">
+                        <div class="txtIcon">Account</div>
+                    </a>
+                    <a class="btnIcon text-center" href="">
+                        <img class="imgIcon" src="images/icons/cart.svg" alt="cart_icon">
+                        <div class="txtIcon">Cart</div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="categoryNav container-fluid d-flex justify-content-center py-1 gap-4">
+            <a class="categoryShortcut" style="font-weight: bold;" href="#">Offers</a>
+            <div class="separator"></div>
+            <a class="categoryShortcut" href="#">Desktops</a>
+            <div class="separator"></div>
+            <a class="categoryShortcut" href="#">Laptops</a>
+            <div class="separator"></div>
+            <a class="categoryShortcut" href="#">Screens</a>
+            <div class="separator"></div>
+            <a class="categoryShortcut" href="#">Phones</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row py-4">
+                <!-- Sidebar Filters -->
+                <div class="col-lg-3 d-flex align-items-center">
+                    <div class="card w-100">
+                        <div class="card-body sidebarContainer">
+                            <!-- Size Filter -->
+                            <div class="mb-4">
+                                <h5>Size</h5>
+                                <div class="filterChoice">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="size1">
+                                        <label class="form-check-label" for="size1"> &lt; 14" </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="size2">
+                                        <label class="form-check-label" for="size2">15" to 20"</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="size3">
+                                        <label class="form-check-label" for="size3">21" to 29"</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="size4">
+                                        <label class="form-check-label" for="size4"> 30" to 35" </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="size5">
+                                        <label class="form-check-label" for="size5"> &gt; 36"</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Brand Filter -->
+                            <div class="mb-4">
+                                <h5>Brand</h5>
+                                <div class="filterChoice">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="brand1">
+                                        <label class="form-check-label" for="brand1">Samsung</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="brand2">
+                                        <label class="form-check-label" for="brand2">HP</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="brand3">
+                                        <label class="form-check-label" for="brand3">Dell</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="brand4">
+                                        <label class="form-check-label" for="brand4">Tompson</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="brand5">
+                                        <label class="form-check-label" for="brand5">BenQ</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="brand6" checked>
+                                        <label class="form-check-label" for="brand6">Lenovo</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="brand7">
+                                        <label class="form-check-label" for="brand7">Asus</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Price Filter -->
+                            <div class="mb-4">
+                                <h5>Price</h5>
+
+                                <div class="priceTxtBox d-flex">
+                                    <div class="minBox w-50 pe-1 me-1">
+                                        <div class="input-group">
+                                            <input type="text" name="txtMinVal" class="inputField txtMinVal" onchange="setMinInput()">
+                                            <span class="currency d-flex align-items-center text-center">$</span>
+                                        </div>
+                                    </div>
+                                    <div class="maxBox w-50 pe-1 me-1">
+                                        <div class="input-group">
+                                            <input type="text" name="txtMaxVal" class="inputField txtMaxVal" onchange="setMaxInput()"/>
+                                            <span class="currency d-flex align-items-center text-center">$</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="priceSliders">
+                                    <span class="sliderTrack"></span>
+                                    <input type="range" class="slideMinVal" name="slideMinVal" min="0" max="1000"
+                                        value="200" oninput="slideMin()">
+                                    <input type="range" class="slideMaxVal" name="slideMaxVal" min="0" max="1000"
+                                        value="460" oninput="slideMax()">
+                                    <div class="tooltip minTooltip"></div>
+                                    <div class="tooltip maxTooltip"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product displayed -->
+                <div class="col-lg-9">
+                    <!-- Row 1 -->
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-2">
+                        <div class="col">
+                            <a href="detailsProduct.html">
+                                <div class="card">
+                                    <img src="images/ecran Lenovo.jpg" class="card-img-top" alt="Lenovo Monitor">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ecran Lenovo 17"</h6>
+                                        <p class="card-text fw-bold text-end">145.99$</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detailsProduct.html">
+                                <div class="card">
+                                    <img src="images/ecran Lenovo.jpg" class="card-img-top" alt="Lenovo Monitor">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ecran Lenovo 17"</h6>
+                                        <p class="card-text fw-bold text-end">145.99$</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detailsProduct.html">
+                                <div class="card">
+                                    <img src="images/ecran Lenovo.jpg" class="card-img-top" alt="Lenovo Monitor">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ecran Lenovo 17"</h6>
+                                        <p class="card-text fw-bold text-end">145.99$</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detailsProduct.html">
+                                <div class="card">
+                                    <img src="images/ecran Lenovo.jpg" class="card-img-top" alt="Lenovo Monitor">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ecran Lenovo 17"</h6>
+                                        <p class="card-text fw-bold text-end">145.99$</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-2">
+                        <div class="col">
+                            <a href="detailsProduct.html">
+                                <div class="card">
+                                    <img src="images/ecran Lenovo.jpg" class="card-img-top" alt="Lenovo Monitor">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ecran Lenovo 17"</h6>
+                                        <p class="card-text fw-bold text-end">145.99$</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detailsProduct.html">
+                                <div class="card">
+                                    <img src="images/ecran Lenovo.jpg" class="card-img-top" alt="Lenovo Monitor">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ecran Lenovo 17"</h6>
+                                        <p class="card-text fw-bold text-end">145.99$</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detailsProduct.html">
+                                <div class="card">
+                                    <img src="images/ecran Lenovo.jpg" class="card-img-top" alt="Lenovo Monitor">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ecran Lenovo 17"</h6>
+                                        <p class="card-text fw-bold text-end">145.99$</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detailsProduct.html">
+                                <div class="card">
+                                    <img src="images/ecran Lenovo.jpg" class="card-img-top" alt="Lenovo Monitor">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ecran Lenovo 17"</h6>
+                                        <p class="card-text fw-bold text-end">145.99$</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-2">
+                        <div class="col">
+                            <a href="detailsProduct.html">
+                                <div class="card">
+                                    <img src="images/ecran Lenovo.jpg" class="card-img-top" alt="Lenovo Monitor">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ecran Lenovo 17"</h6>
+                                        <p class="card-text fw-bold text-end">145.99$</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detailsProduct.html">
+                                <div class="card">
+                                    <img src="images/ecran Lenovo.jpg" class="card-img-top" alt="Lenovo Monitor">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ecran Lenovo 17"</h6>
+                                        <p class="card-text fw-bold text-end">145.99$</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detailsProduct.html">
+                                <div class="card">
+                                    <img src="images/ecran Lenovo.jpg" class="card-img-top" alt="Lenovo Monitor">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ecran Lenovo 17"</h6>
+                                        <p class="card-text fw-bold text-end">145.99$</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detailsProduct.html">
+                                <div class="card">
+                                    <img src="images/ecran Lenovo.jpg" class="card-img-top" alt="Lenovo Monitor">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ecran Lenovo 17"</h6>
+                                        <p class="card-text fw-bold text-end">145.99$</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-2">
+                        <div class="col">
+                            <a href="detailsProduct.html">
+                                <div class="card">
+                                    <img src="images/ecran Lenovo.jpg" class="card-img-top" alt="Lenovo Monitor">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ecran Lenovo 17"</h6>
+                                        <p class="card-text fw-bold text-end">145.99$</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detailsProduct.html">
+                                <div class="card">
+                                    <img src="images/ecran Lenovo.jpg" class="card-img-top" alt="Lenovo Monitor">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ecran Lenovo 17"</h6>
+                                        <p class="card-text fw-bold text-end">145.99$</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detailsProduct.html">
+                                <div class="card">
+                                    <img src="images/ecran Lenovo.jpg" class="card-img-top" alt="Lenovo Monitor">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ecran Lenovo 17"</h6>
+                                        <p class="card-text fw-bold text-end">145.99$</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detailsProduct.html">
+                                <div class="card">
+                                    <img src="images/ecran Lenovo.jpg" class="card-img-top" alt="Lenovo Monitor">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ecran Lenovo 17"</h6>
+                                        <p class="card-text fw-bold text-end">145.99$</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav class="mt-4">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer></footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

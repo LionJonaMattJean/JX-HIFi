@@ -1,0 +1,76 @@
+# Node modules
+node_modules/
+
+# Build output (générés lors de la compilation)
+dist/
+build/
+out/
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs et fichiers temporaires
+*.log
+npm-debug.log*
+yarn-debug.log*
+.pnpm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# Environment variables and configuration
+.env
+.env.*.local
+
+# IDE and editor config files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.vcxproj
+*.vcxproj.user
+*.code-workspace
+
+# Fichiers spécifiques à Visual Studio
+.vscode/
+*.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Angular specific files (si vous ajoutez Angular plus tard)
+.angular/
+.angular-cache/
+*.angular
+*.angular-cli.json
+.angular.json
+*.bak
+*.cache
+
+# Spring Boot specific files (si vous ajoutez Spring Boot plus tard)
+target/
+bin/
+*.war
+*.jar
+
+# TypeScript et compilation
+*.tsbuildinfo
+lib/
+tsconfig.tsbuildinfo
+
+# Package lock files (optionnel, si vous préférez ne pas les suivre pour éviter les conflits)
+package-lock.json
+package.json
+yarn.lock
+
+# Fichiers locaux spécifiques à la machine
+*.DS_Store
+*.swp
+Thumbs.db

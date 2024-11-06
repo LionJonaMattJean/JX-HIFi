@@ -1,0 +1,24 @@
+
+   [
+    {
+      "id": 1,
+      "departement": "Ordinateur de bureau",
+      "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Computer"
+    },
+    {
+      "id": 2,
+      "departement": "Ordinateur Portable",
+      "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Laptop"
+    },
+    {
+      "id": 3,
+      "departement": "Cellulaire",
+      "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Smartphone"
+    },
+    {
+      "id": 4,
+      "departement": "Écran",
+      "photo": "https://dummyimage.com/400x300/000/2b2f69.png&text=Écran"
+    }
+  ]
+
