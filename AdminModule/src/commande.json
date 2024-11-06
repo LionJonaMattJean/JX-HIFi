@@ -1,0 +1,201 @@
+[
+  {
+    "idCommande": "1001",
+    "client": {
+      "prenom": "Alice",
+      "nom": "Smith",
+      "email": "alice.smith@example.com",
+      "telephone": "+1234567891",
+      "adresse": {
+        "rue": "456 Oak St",
+        "ville": "Seattle",
+        "etat": "WA",
+        "codePostal": "98101",
+        "pays": "USA"
+      }
+    },
+    "produits": [
+      {
+        "idProduit": "C1",
+        "nomProduit": "Widget A",
+        "quantite": 3,
+        "prix": 15.99,
+        "total": 47.97
+      },
+      {
+        "idProduit": "D2",
+        "nomProduit": "Gadget B",
+        "quantite": 1,
+        "prix": 29.99,
+        "total": 29.99
+      }
+    ],
+    "sousTotal": 77.96,
+    "taxe": 6.24,
+    "livraison": 5.99,
+    "total": 90.19,
+    "paiement": {
+      "methode": "Carte de Crédit",
+      "idTransaction": "TX1001",
+      "statut": "Payé"
+    },
+    "methodeLivraison": "Standard",
+    "dateCommande": "2024-11-01T10:15:00Z",
+    "statut": "Expédié"
+  },
+  {
+    "idCommande": "1002",
+    "client": {
+      "prenom": "Bob",
+      "nom": "Johnson",
+      "email": "bob.johnson@example.com",
+      "telephone": "+1234567892",
+      "adresse": {
+        "rue": "789 Pine St",
+        "ville": "New York",
+        "etat": "NY",
+        "codePostal": "10001",
+        "pays": "USA"
+      }
+    },
+    "produits": [
+      {
+        "idProduit": "E3",
+        "nomProduit": "Widget B",
+        "quantite": 2,
+        "prix": 25.00,
+        "total": 50.00
+      }
+    ],
+    "sousTotal": 50.00,
+    "taxe": 4.00,
+    "livraison": 7.99,
+    "total": 61.99,
+    "paiement": {
+      "methode": "PayPal",
+      "idTransaction": "TX1002",
+      "statut": "Payé"
+    },
+    "methodeLivraison": "Express",
+    "dateCommande": "2024-11-01T11:00:00Z",
+    "statut": "Traitement"
+  },
+  {
+    "idCommande": "1003",
+    "client": {
+      "prenom": "Charlie",
+      "nom": "Brown",
+      "email": "charlie.brown@example.com",
+      "telephone": "+1234567893",
+      "adresse": {
+        "rue": "321 Maple St",
+        "ville": "Los Angeles",
+        "etat": "CA",
+        "codePostal": "90001",
+        "pays": "USA"
+      }
+    },
+    "produits": [
+      {
+        "idProduit": "F4",
+        "nomProduit": "Gadget C",
+        "quantite": 4,
+        "prix": 10.00,
+        "total": 40.00
+      }
+    ],
+    "sousTotal": 40.00,
+    "taxe": 3.20,
+    "livraison": 4.99,
+    "total": 48.19,
+    "paiement": {
+      "methode": "Carte de Crédit",
+      "idTransaction": "TX1003",
+      "statut": "Payé"
+    },
+    "methodeLivraison": "Standard",
+    "dateCommande": "2024-11-01T12:30:00Z",
+    "statut": "Expédié"
+  },
+  {
+    "idCommande": "1004",
+    "client": {
+      "prenom": "Diana",
+      "nom": "Prince",
+      "email": "diana.prince@example.com",
+      "telephone": "+1234567894",
+      "adresse": {
+        "rue": "654 Birch St",
+        "ville": "Chicago",
+        "etat": "IL",
+        "codePostal": "60601",
+        "pays": "USA"
+      }
+    },
+    "produits": [
+      {
+        "idProduit": "G5",
+        "nomProduit": "Widget C",
+        "quantite": 1,
+        "prix": 19.99,
+        "total": 19.99
+      },
+      {
+        "idProduit": "H6",
+        "nomProduit": "Gadget D",
+        "quantite": 1,
+        "prix": 39.99,
+        "total": 39.99
+      }
+    ],
+    "sousTotal": 59.98,
+    "taxe": 4.80,
+    "livraison": 5.99,
+    "total": 70.77,
+    "paiement": {
+      "methode": "Carte de Crédit",
+      "idTransaction": "TX1004",
+      "statut": "Payé"
+    },
+    "methodeLivraison": "Standard",
+    "dateCommande": "2024-11-01T13:45:00Z",
+    "statut": "Traitement"
+  },
+  {
+    "idCommande": "1005",
+    "client": {
+      "prenom": "Eve",
+      "nom": "Adams",
+      "email": "eve.adams@example.com",
+      "telephone": "+1234567895",
+      "adresse": {
+        "rue": "852 Cedar St",
+        "ville": "Houston",
+        "etat": "TX",
+        "codePostal": "77001",
+        "pays": "USA"
+      }
+    },
+    "produits": [
+      {
+        "idProduit": "I7",
+        "nomProduit": "Widget D",
+        "quantite": 5,
+        "prix": 9.99,
+        "total": 49.95
+      }
+    ],
+    "sousTotal": 49.95,
+    "taxe": 3.99,
+    "livraison": 6.50,
+    "total": 60.44,
+    "paiement": {
+      "methode": "Carte Débit",
+      "idTransaction": "TX1005",
+      "statut": "Payé"
+    },
+    "methodeLivraison": "Express",
+    "dateCommande": "2024-11-01T14:30:00Z",
+    "statut": "Expédié"
+  }
+]

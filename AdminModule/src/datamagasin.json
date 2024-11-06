@@ -1,0 +1,90 @@
+[
+  {
+    "IDMagasin": 1,
+    "NomDuMagasin": "jx-hifi Centre",
+    "NomDuProprietaire": "Luc Durand",
+    "NomDuGerant": "Marie Tremblay",
+    "Adresse": "123 Rue Principale",
+    "Ville": "Montreal",
+    "CodePostal": "H2Z1A1",
+    "Email": "centre@jx-hifi.com",
+    "Telephone": "514-555-1234"
+  },
+  {
+    "IDMagasin": 2,
+    "NomDuMagasin": "jx-hifi Ouest",
+    "NomDuProprietaire": "Jean-Paul Bernard",
+    "NomDuGerant": "Sophie Martin",
+    "Adresse": "456 Avenue Ouest",
+    "Ville": "Quebec",
+    "CodePostal": "G1R2L5",
+    "Email": "ouest@jx-hifi.com",
+    "Telephone": "418-555-5678"
+  },
+  {
+    "IDMagasin": 3,
+    "NomDuMagasin": "jx-hifi Sud",
+    "NomDuProprietaire": "Chantal Boucher",
+    "NomDuGerant": "Alexandre Lemoine",
+    "Adresse": "789 Boulevard Sud",
+    "Ville": "Laval",
+    "CodePostal": "H7N3A2",
+    "Email": "sud@jx-hifi.com",
+    "Telephone": "450-555-8765"
+  },
+  {
+    "IDMagasin": 4,
+    "NomDuMagasin": "jx-hifi Nord",
+    "NomDuProprietaire": "Marc Levesque",
+    "NomDuGerant": "Julie Renaud",
+    "Adresse": "1010 Rue du Nord",
+    "Ville": "Gatineau",
+    "CodePostal": "J8X2P4",
+    "Email": "nord@jx-hifi.com",
+    "Telephone": "819-555-2345"
+  },
+  {
+    "IDMagasin": 5,
+    "NomDuMagasin": "jx-hifi Est",
+    "NomDuProprietaire": "Diane Tremblay",
+    "NomDuGerant": "Pierre Gagnon",
+    "Adresse": "2020 Chemin Est",
+    "Ville": "Sherbrooke",
+    "CodePostal": "J1H3E5",
+    "Email": "est@jx-hifi.com",
+    "Telephone": "819-555-6789"
+  },
+  {
+    "IDMagasin": 6,
+    "NomDuMagasin": "jx-hifi Downtown",
+    "NomDuProprietaire": "Guy Fortin",
+    "NomDuGerant": "Isabelle Dubois",
+    "Adresse": "3030 Rue King",
+    "Ville": "Trois-Rivieres",
+    "CodePostal": "G9A4R9",
+    "Email": "downtown@jx-hifi.com",
+    "Telephone": "819-555-3456"
+  },
+  {
+    "IDMagasin": 7,
+    "NomDuMagasin": "jx-hifi Banlieue",
+    "NomDuProprietaire": "Francois Bergeron",
+    "NomDuGerant": "Nathalie Caron",
+    "Adresse": "4040 Rue Desjardins",
+    "Ville": "Longueuil",
+    "CodePostal": "J4K2T7",
+    "Email": "banlieue@jx-hifi.com",
+    "Telephone": "450-555-4321"
+  },
+  {
+    "IDMagasin": 8,
+    "NomDuMagasin": "jx-hifi Village",
+    "NomDuProprietaire": "Monique Lapointe",
+    "NomDuGerant": "Michel Leblanc",
+    "Adresse": "5050 Rue Villeneuve",
+    "Ville": "Saint-Jean",
+    "CodePostal": "J3B1P1",
+    "Email": "village@jx-hifi.com",
+    "Telephone": "450-555-9876"
+  }
+]

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/header_jx-hifi.css'></head>
+    <link rel="stylesheet" href="/css/carousel.css">
+</head>
+
+
+    <body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand d-none d-lg-block" href="index.html">
+                    <img src="images/logo/Logo JX-HIFI extern transparent.png" alt="logo jx-hifi" width="100">
+                </a>
+                
+                <div class="input-group w-100 w-lg-50 d-flex justify-content-center">
+                    <input class="form-control" style="--bs-border-radius: 20px; max-width: 750px;" type="text"
+                        placeholder="Find a product...">
+                    <button class="btn" style="--bs-btn-bg: white; --bs-btn-border-radius: 20px" type="submit">
+                        <img src="images/icons/search.svg" alt="search_icon" style="height: 1.5em;">
+                    </button>
+                </div>
+    
+                <div class="d-none d-lg-flex gap-5">
+                    <a class="btnIcon text-center" href="">
+                        <img class="imgIcon" src="images/icons/Shop.svg" alt="store_icon">
+                        <div class="txtIcon">Stores</div>
+                    </a>
+                    <a class="btnIcon text-center" href="">
+                        <img class="imgIcon" src="images/icons/Profil.svg" alt="account_icon">
+                        <div class="txtIcon">Account</div>
+                    </a>
+                    <a class="btnIcon text-center" href="">
+                        <img class="imgIcon" src="images/icons/cart.svg" alt="cart_icon">
+                        <div class="txtIcon">Cart</div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="categoryNav container-fluid d-flex flex-wrap justify-content-center py-1 gap-2 text-center">
+            <a class="categoryShortcut" style="font-weight: bold;" href="#">Offers</a>
+            <div class="separator"></div>
+            <a class="categoryShortcut" href="#">Desktops</a>
+            <div class="separator"></div>
+            <a class="categoryShortcut" href="#">Laptops</a>
+            <div class="separator"></div>
+            <a class="categoryShortcut" href="#">Screens</a>
+            <div class="separator"></div>
+            <a class="categoryShortcut" href="#">Phones</a>
+        </div>
+    </header>
+
+        <div id="carouselPromo" class="carousel slide">
+            
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselPromoIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselPromoIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselPromoIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active c-item">
+                    <img src="/images/promo/promo.jpg" class="d-block w-100 c-image" alt="...">
+                </div>
+
+                <div class="carousel-item c-item">
+                    <img src="/images/promo/phone_sale.jpg" class="d-block w-100 c-image" alt="...">
+                </div>
+
+                <div class="carousel-item c-item">
+                    <img src="/images/promo/tower.jpg" class="d-block w-100 c-image" alt="...">
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPromo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPromo" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <h1>Categories</h1>
+            <div class="row gy-5">
+
+                <div class="col-sm-3 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sale</h5>
+                            <img src="/images/categories/sale-logo.jpg" style="width: 200px; height: 200px;" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-3 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Desktops</h5>
+                            <img src="/images/categories/tower.jpg" style="width: 200px; height: 200px;" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-sm-3 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Laptops</h5>
+                            <img src="/images/categories/laptop.jpg" style="width: 200px; height: 200px;" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-3 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Screens</h5>
+                            <img src="/images/categories/monitor.jfif" style="width: 300px; height: 200px;" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-3 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Phones</h5>
+                            <img src="/images/categories/phone.jfif" style="width: 200px; height: 200px;" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+
+        <!--nav bar cacher pour les ecran grands et visible pour les petits ecrans-->
+        <nav class="navbar navbar-light bg-primary fixed-bottom d-md-none">
+            <ul class="navbar-nav d-flex flex-row justify-content-around w-100">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+
+
+        <br>
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted" >
+
+
+            <!-- Section: Links  -->
+            <section class="" style="background-color: #4165C0;">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                     <br>
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="color:white">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3" ></i>INSERT LOGO  JX-Hifi
+                            </h6>
+                            <p>
+                                This is our project, its a really cool badasss mofo project
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+        
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="color:white">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Corporate
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">About Us</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Contact Us</a>
+                            </p>
+
+                        </div>
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: #4165C0; color:white;">
+                © 2024 Bisoux, caresses, et popcorn au chocolat!
+                
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+            
+
+
+
+
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

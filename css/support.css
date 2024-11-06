@@ -1,0 +1,34 @@
+.support-image{
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    filter: brightness(0.9); 
+    border-radius: 15px; 
+}
+
+.list-group-item {
+    background-color: #A3BDFF;
+    color: #000;
+    
+}
+
+.list-group-item:hover {
+    background-color: #8EA8E5;
+    cursor: pointer;
+    
+}
+
+.contact-form{
+    background-color: #8EA8E5;
+    border-radius: 15px;
+    padding: 15px;
+}
+.row-message{
+    height:320px
+}
+
+.send{
+    width: 250px;
+}
+
+
