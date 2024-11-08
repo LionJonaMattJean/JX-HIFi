@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel='stylesheet' href="css/detailProduct.css">
     <script src='js/quantityProduct.js' defer></script>
+    <script src="js/changePicture.js" defer></script>
 </head>
 
 <body>
@@ -59,21 +60,21 @@
 
     <main>
         <div class="container my-5">
-            <div class="row">
-                <div class="col-md-1">
-                    <div class="d-flex flex-column gap-3">
-                        <img src="images/ecran Lenovo.jpg" alt="Monitor 1" class="border">
-                        <img src="images/ecran Lenovo.jpg" alt="Monitor 2">
-                        <img src="images/ecran Lenovo.jpg" alt="Monitor 3">
-                        <img src="images/ecran Lenovo.jpg" alt="Monitor 4">
+            <div class="row flex-lg-row">
+                <div class="col-lg-1 order-lg-1 order-2">
+                    <div class="pictureCollection d-flex flex-lg-column gap-3">
+                        <img src="images/ecran Lenovo.jpg" alt="Monitor 1">
+                        <img src="https://picsum.photos/id/237/300/200" alt="Monitor 2">
+                        <img src="https://picsum.photos/id/235/300/200" alt="Monitor 3">
+                        <img src="https://picsum.photos/id/230/300/200" alt="Monitor 4">
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="ratio ratio-16x9">
+                <div class="col-lg-6 order-lg-2 order-1 mb-3">
+                    <div class="mainPicture">
                         <img src="images/ecran Lenovo.jpg" alt="Monitor 1">
                     </div>
                 </div>
-                <div class="col-md-5">
+                <div class="productPresentation col-lg-5 order-3">
                     <h2 class="fw-bold">Monitor Lenovo 17” HDMI 2.0 USB-A 40Hz</h2>
                     <p><span class="stars text-warning h3">&#9733;&#9733;&#9733;&#9734;&#9734;</span> (21 avis)</p>
                     <h1 class="txtPrice">$145,99 <del class="text-muted h6">$160</del></h1>
