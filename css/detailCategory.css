@@ -28,6 +28,16 @@ body a {
     margin: auto 5px;
 }
 
+/* Style du offCanvas */
+.filterOffCanvansContainer {
+    background-color: rgba(143, 166, 224, 0.2);
+    border-radius: 25px;
+}
+
+.filterOffCanvansContainer h5 {
+    padding-left: 16%;
+    margin-top: 10%;
+}
 
 /* Style de la sidebar gauche */
 .sidebarContainer h5 {
@@ -60,7 +70,6 @@ input[type="range"]::-webkit-slider-thumb {
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    /* border: 1px solid rgba(16, 60, 172, 1); */
     background: rgba(16, 60, 172, 1);
     pointer-events: auto;
     appearance: none;
